@@ -45,13 +45,13 @@ const {
   deleteBalance
 } = require('../controllers/balanceController.js');
 
-const {
-  createBalanceledger,
-  getBalanceledger,
-  getBalanceledgerById,
-  updateBalanceledger,
-  deleteBalanceledger
-} = require('../controllers/balanceLedgerController.js');
+//const {
+ // createBalanceledger,
+ // getBalanceledger,
+ // getBalanceledgerById,
+ // updateBalanceledger,
+//  deleteBalanceledger
+//} = require('../controllers/balanceLedgerController.js');
 
 const {
   createBank,
@@ -344,11 +344,11 @@ router.post('/getBalanceById', verifyToken, getBalanceById);
 router.post('/updateBalance', verifyToken, updateBalance);
 router.post('/deleteBalance', verifyToken, deleteBalance);
 
-router.post('/createBalanceledger', verifyToken, createBalanceledger);
-router.post('/getBalanceledger', verifyToken, getBalanceledger);
-router.post('/getBalanceledgerById', verifyToken, getBalanceledgerById);
-router.post('/updateBalanceledger', verifyToken, updateBalanceledger);
-router.post('/deleteBalanceledger', verifyToken, deleteBalanceledger);
+//router.post('/createBalanceledger', verifyToken, createBalanceledger);
+//router.post('/getBalanceledger', verifyToken, getBalanceledger);
+//router.post('/getBalanceledgerById', verifyToken, getBalanceledgerById);
+//router.post('/updateBalanceledger', verifyToken, updateBalanceledger);
+//router.post('/deleteBalanceledger', verifyToken, deleteBalanceledger);
 
 router.post('/createBank', verifyToken, createBank);
 router.post('/getBanks', verifyToken, getBanks);
